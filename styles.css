@@ -1,0 +1,124 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background: #ffb012;
+    background: -webkit-linear-gradient(90deg, rgba(255, 176, 18, 1) 0%, rgba(255, 209, 117, 0.8) 50%, rgba(255, 176, 18, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(255, 176, 18, 1) 0%, rgba(255, 209, 117, 0.8) 50%, rgba(255, 176, 18, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 176, 18, 1) 0%, rgba(255, 209, 117, 0.8) 50%, rgba(255, 176, 18, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFB012", endColorstr="#FFB012", GradientType=1);
+    overflow-x: hidden;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding-left: 30px;
+}
+
+header h1, h1 span{
+    font-family: "Dancing Script", cursive;
+    color: rgb(255, 123, 0);
+}
+
+header h1{
+    font-size: 2.5em;
+}
+
+h1 span{
+    font-size: 1em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.desc-container{
+    max-width: 500px;
+    text-align: center;
+}
+
+.desc-container h1{
+    font-size: 2.5em;
+}
+
+.form-container{
+    background: #f06b05;    
+    background: linear-gradient(90deg, rgba(240, 107, 5, 1) 0%, rgba(255, 156, 80, 0.8) 50%, rgba(240, 107, 5, 1) 100%);
+    max-width: 500px;
+    width: auto;
+    padding: 15px 50px;
+    border-radius: 30px;
+}
+
+.form-container h2{
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 3.5px 10px;
+    background-color: #f0b78b;
+}
+
+form label, form p{
+    font-weight: 600;
+    font-size: 0.88em;
+}
+
+.toggle-link{
+    color:rgb(255, 201, 92);
+    cursor: pointer;
+}
+
+form p:hover{
+    opacity: 0.88;
+}
+
+form p:active{
+    opacity: 0.75;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"]{
+    width: 350px;
+}
+
+form button{
+    margin-top: 12px;
+    background-color: #f3a600;
+    border: none;
+    width: 75px;
+    height: 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #111111;
+    color: #ffff00;
+}
+
+form button:active{
+    opacity: 0.75;
+}
+
+@media(max-width: 1275px) {
+    main{
+        padding: 25px;
+        gap: 5vw;
+    }
+}
+
+@media(max-width: 930px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+}
