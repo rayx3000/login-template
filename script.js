@@ -10,19 +10,22 @@ let signUp = `
                 <input type="text" id="signup-last-name" required><br><br>
                 <label for="signup-date-of-birth">Date of Birth</label><br>
                 <input type="date" id="signup-date-of-birth" required><br><br>
-                <p>Gender</p>
-                <label>
-                    <input type="radio" name="gender" value="male" required>
-                    Male
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female" required>
-                    Female
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="non-binary" required>
-                    Non-Binary
-                </label><br><br>
+                <div class="gender-container">
+                    <legend>Gender</legend>
+                    <label for="male">
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="gender" value="female" required>
+                        Female
+                    </label>
+                    <label for="non-binary">
+                        <input type="radio" name="gender" value="non-binary" required>
+                        Non-Binary
+                    </label>
+                </div>
+                <br><br>
                 <label for="signup-username">Username</label><br>
                 <input type="text" id="signup-username" required><br><br>
                 <label for="signup-email-address">Email</label><br>
@@ -54,7 +57,7 @@ let signUpMessage = `
             <h1>Welcome To <span>Eyy</span></h1>
             <p>Your Next Gen Smart Social Media app that is in your hands, the ultimate destination 
                for connecting each other, with cool features like Shorts, AI based Camera, Shops, 
-               E-payments and More, Socnix provides All-in-one Social Media and Services That's 
+               E-payments and More, <span>Eyy</span> provides All-in-one Social Media and Services That's 
                Suits Your Needs </p>
 `
 
